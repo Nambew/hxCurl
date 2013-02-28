@@ -176,6 +176,10 @@ class Curl
 		
 	public static inline function setopt(resource:String, option:String, value:Dynamic):Bool
 	{
+		if ( Std.is( value, Array ) ) {
+			value = Lib.toPhpArray( value );
+		}
+		
 		return untyped __call__("curl_setopt", resource, untyped __php__(option), value);
 	}
 	

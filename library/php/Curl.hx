@@ -146,6 +146,8 @@ class CurlOpt
 	public static inline var PROGRESSFUNCTION = "CURLOPT_PROGRESSFUNCTION";
 	public static inline var READFUNCTION = "CURLOPT_READFUNCTION";
 	public static inline var WRITEFUNCTION = "CURLOPT_WRITEFUNCTION";
+	public static inline var CURLOPT_IPRESOLVE = "CURLOPT_IPRESOLVE";
+	public static inline var CURL_IPRESOLVE_V4 = 1;
 }
 
 class Curl 

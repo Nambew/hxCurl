@@ -26,6 +26,7 @@ class Curl
 		
 		#if php
 		NativeCurl.setopt(curl, CurlOpt.RETURNTRANSFER, true);
+		NativeCurl.setopt(curl, CurlOpt.CURLOPT_IPRESOLVE, CurlOpt.CURL_IPRESOLVE_V4);
 		#end
 		
 		if (data != null && method.toLowerCase() == "post")
